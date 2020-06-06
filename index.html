@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Index</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script src="main.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#lorem1">Lorem1</a></li>
+					<li><a href="#lorem2">Lorem2</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>	
+			</nav>
+		</header>
+
+		<section id="banner" class="banner">
+			<p>Lorem</p> <!-- [Aqui vem uma imagem de banner] -->
+		</section>	
+
+		<section id="sobre" class="flex-container">
+			<article data-animation="esquerda">
+				Sobre
+			</article>
+
+			<article data-animation="direita">
+				Sobre
+			</article>
+		</section>	
+
+		<section id="lorem1" class="flex-container">
+			<article class="borda0 container-img" data-animation="esquerda">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+			</article>
+
+			<article class="container-img" data-animation="centro">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+			</article>
+
+			<article class="container-img" data-animation="direita">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+				<img src="files/img.png" class="mini" onclick="cliqueModal(this)" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+			</article>
+		</section>	
+
+		<section class="parallax">
+			<article></article>
+		</section>
+
+		<section id="lorem2" class="flex-container">
+			<article data-animation="esquerda">
+				Links
+			</article>
+
+			<article data-animation="direita">
+				Links
+			</article>
+		</section>
+
+		<section class="parallax">
+			<article></article>
+		</section>	
+
+		<footer id="contato" class="flex-container">
+			<article data-animation="esquerda">
+				Informações de contato
+			</article>
+
+			<article data-animation="centro">
+				Informações de contato
+			</article>
+
+			<article data-animation="direita">
+				Informações de contato
+			</article>
+		</footer>	
+
+		<div id="janelaModal" class="janelaModal esconderJanelaModal">
+			<span id="btnFechar" class="fecharModal">X</span>
+			<img id="imgModal" class="imgModal">
+			<div id="textoModal" class="textoModal"></div>
+		</div>
+		
+	</body>
+</html>
