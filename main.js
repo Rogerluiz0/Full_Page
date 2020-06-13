@@ -1,4 +1,4 @@
-window.addEventListener('load', function start(){
+window.addEventListener('load', function(){
 	const elementos = document.querySelectorAll('[data-animation]')
 	const animacaoClass = 'animacao'
 
