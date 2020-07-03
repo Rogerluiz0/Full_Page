@@ -1,9 +1,9 @@
-@font-face{
+@font-face {
 	font-family: fontMain;
-	src: url(files/OpenSans-ExtraBold.ttf);
+	src: url(../files/OpenSans-ExtraBold.ttf);
 }
 
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
@@ -11,9 +11,11 @@
 	font-family: fontMain;
 }
 
-html{ scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
 
-header{
+header {
 	padding: 15px 0px 15px 0px;
 	position: fixed; 
 	width: 100%;
@@ -21,14 +23,16 @@ header{
 	z-index: 9999;
 }
 
-header nav ul{
+header nav ul {
 	list-style: none;
 	text-align: center;
 }
 
-header nav ul li{ display: inline; }
+header nav ul li { 
+  display: inline; 
+}
 
-header nav ul li a{
+header nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #888;
@@ -39,77 +43,79 @@ header nav ul li a{
 	padding: 5px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
 	background-color: #888;
 	color: #FFF;
 	border-radius: 0px 10px 0px 10px;
 	transition: .5s;
 }
 
-section, footer{
+section, footer {
 	width: 100%;
 	height: 600px;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
-footer,section:nth-child(even){
+footer,section:nth-child(even) {
 	background-color: #6A5ACD;
 }
 
-.banner{
+.banner {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 }
 
-.banner p{
+.banner p {
 	color: #FFF;
 	font-size: 250px;
 }
 
-.flex-container{
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-article{
+article {
 	width: 70%;
 	text-align: center;
 }
 
-#sobre{ text-align: justify; }
+#sobre { 
+  text-align: justify; 
+}
 
 /* ANIMAÇÕES */
 
-[data-animation]{
+[data-animation] {
 	opacity: 0;
 	transition: 1s;
 }
 
-[data-animation="esquerda"]{
+[data-animation="esquerda"] {
 	transform: translate3d(-50px, 0, 0);
 }
 
-[data-animation="direita"]{
+[data-animation="direita"] {
 	transform: translate3d(50px, 0, 0);
 }
 
-[data-animation="centro"]{
+[data-animation="centro"] {
 	transform: translate3d(0, 50px, 0);
 }
 
-[data-animation].animacao{
+[data-animation].animacao { 
 	opacity: 1;
 	transform: translate3d(0,0,0);
 }
 
 /* PARALLAX*/
 
-.parallax{
-	background-image: url(files/parallax.jpg);
+.parallax {
+	background-image: url(../files/parallax.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -119,14 +125,14 @@ article{
 
 /* IMGS */
 
-.container-img{
+.container-img {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.mini{
+.mini {
 	width: 49%;
 	padding: 5px;
 	cursor: pointer;
@@ -134,7 +140,7 @@ article{
 
 /* MODAL */
 
-.janelaModal{
+.janelaModal {
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -146,11 +152,15 @@ article{
 	background-color: rgba(0,0,0,0.8);
 }
 
-.mostrarJanelaModal{ display: block; }
+.mostrarJanelaModal { 
+  display: block; 
+}
 
-.esconderJanelaModal{ display: none; }
+.esconderJanelaModal { 
+  display: none; 
+}
 
-.fecharModal{
+.fecharModal {
 	position: absolute;
 	top: 15px;
 	right: 35px;
@@ -160,16 +170,18 @@ article{
 	cursor: pointer;
 }
 
-.fecharModal:hover{ color: #6A5ACD; }
+.fecharModal:hover { 
+  color: #6A5ACD; 
+}
 
-.imgModal{
+.imgModal {
 	width: 100%;
 	max-width: 800px;
 	margin: auto;
 	display: block;
 }
 
-.textoModal{
+.textoModal {
 	width: 80%;
 	max-width: 700px;
 	margin: auto;
